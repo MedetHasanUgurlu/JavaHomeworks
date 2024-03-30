@@ -25,6 +25,9 @@ public class UserManager implements UserService {
 	public boolean login(User user) {
 		boolean x = false;
 		// TODO Auto-generated method stub
+		final var users = userdao.getAllUser();
+		users.stream().forEach(user -> user.getEemail)
+			
 		for(User u: userdao.getAllUser()) {
 			if(user.geteMail().equals(u.geteMail())&&user.getPassword().equals(u.getPassword())) {
 				return true;
